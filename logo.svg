@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+  <defs>
+    <linearGradient id="jk-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="50%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="14" width="52" height="52" rx="14" fill="#131B2E" stroke="url(#jk-grad)" stroke-width="2"/>
+  <path d="M25 28 H33 V44 C33 48 30 51 25 51 C22 51 19 49.5 18 48" stroke="url(#jk-grad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M37 28 V52 M49 28 L38 40 L49 52" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="72" y="38" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" letter-spacing="1.5">JK <tspan fill="url(#jk-grad)">DIGITAL</tspan></text>
+  <text x="72" y="55" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" font-weight="600" fill="#94A3B8" letter-spacing="3.2">MARKETING AGENCY</text>
+</svg>
