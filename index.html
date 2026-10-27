@@ -592,36 +592,48 @@
             <!-- Graphic Container with Offset Crimson Square Behind Top-Left -->
             <div class="sm:col-span-5 relative">
               <!-- Offset Crimson Rounded Square Behind Top-Left Corner -->
-              <div class="absolute -top-3 -left-3 w-32 h-32 bg-crimson rounded-2xl -z-10 shadow-sm"></div>
+              <div class="absolute -top-3 -left-3 w-36 h-36 bg-crimson rounded-3xl -z-10 shadow-lg opacity-90"></div>
               
-              <!-- Foreground Agency Image Card -->
-              <div class="relative bg-blush rounded-2xl p-4 shadow-card border border-blush-accent overflow-hidden">
-                <div class="w-full aspect-[4/5] bg-gradient-to-br from-white via-blush to-blush-accent rounded-xl flex flex-col justify-between p-4 relative">
+              <!-- Foreground Real Digital Marketing Image Card -->
+              <div class="relative bg-white rounded-3xl p-3 shadow-hover border border-blush-accent overflow-hidden group">
+                <div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-inner">
+                  <!-- Real Digital Marketing Strategy & Analytics Photography -->
+                  <img 
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" 
+                    alt="JK Digital Marketing Team Analyzing Growth Campaign Metrics" 
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
                   
-                  <!-- Top: Mug with JK Logo -->
-                  <div class="flex items-center justify-between">
-                    <div class="w-10 h-10 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center p-1">
-                      <div class="w-7 h-7 rounded-full bg-crimson flex items-center justify-center text-white text-[9px] font-extrabold">JK</div>
-                    </div>
-                    <span class="text-[10px] uppercase font-bold tracking-wider text-crimson">Agency Desk</span>
+                  <!-- Gradient overlay for text legibility -->
+                  <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-black/20"></div>
+
+                  <!-- Floating Badge 1: Top Brand Pill -->
+                  <div class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-full shadow-md flex items-center gap-2 border border-white/80">
+                    <div class="w-5 h-5 rounded-full bg-crimson text-white flex items-center justify-center text-[8px] font-extrabold">JK</div>
+                    <span class="text-[11px] font-bold text-charcoal">Strategy & Analytics</span>
                   </div>
 
-                  <!-- Center: Laptop & Notebook Graphic -->
-                  <div class="my-auto space-y-2 text-center">
-                    <div class="inline-block p-3 rounded-2xl bg-white shadow-soft border border-slate-100">
-                      <svg class="w-12 h-12 text-crimson mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
-                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                        <line x1="8" y1="21" x2="16" y2="21"></line>
-                        <line x1="12" y1="17" x2="12" y2="21"></line>
-                      </svg>
-                    </div>
-                    <div class="text-xs font-bold text-charcoal">Creative & Analytical</div>
-                    <div class="text-[11px] text-body">Coimbatore, India</div>
+                  <!-- Floating Badge 2: Live ROI Tag -->
+                  <div class="absolute top-3 right-3 bg-emerald-500 text-white font-extrabold text-[10px] px-2.5 py-1 rounded-full shadow-md flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+                    <span>+184% ROI</span>
                   </div>
 
-                  <!-- Bottom: Badge -->
-                  <div class="bg-white/90 backdrop-blur-sm rounded-lg py-1.5 px-3 text-center border border-white">
-                    <span class="text-[10px] font-bold text-crimson">★ High Quality Results</span>
+                  <!-- Bottom Content Overlay -->
+                  <div class="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-md rounded-xl p-3 shadow-lg border border-white/80">
+                    <div class="flex items-center justify-between">
+                      <div>
+                        <div class="text-[12px] font-extrabold text-charcoal">Performance Marketing Hub</div>
+                        <div class="text-[10px] text-crimson font-bold">Eachanari, Coimbatore</div>
+                      </div>
+                      <div class="w-8 h-8 rounded-lg bg-crimson/10 text-crimson flex items-center justify-center">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                          <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                          <polyline points="17 6 23 6 23 12"></polyline>
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -636,12 +648,25 @@
                 We Are JK Digital Marketing
               </h2>
               <p class="text-body text-sm sm:text-base leading-relaxed font-normal">
-                We are a team of creative minds, digital experts and storytellers. Our goal is simple — to help businesses like yours grow online with innovative strategies, result-driven campaigns and personalized support.
+                Based in Eachanari, Coimbatore, <strong class="text-charcoal font-semibold">JK Digital Marketing</strong> is a full-service growth marketing agency founded by <strong class="text-charcoal font-semibold">K Indraajith</strong>. We bridge creative storytelling with hard analytical performance to help businesses build recognizable brands and generate compounding revenue.
               </p>
+              <p class="text-body text-sm sm:text-base leading-relaxed font-normal">
+                Whether you need to capture high-intent search traffic through <strong>technical SEO</strong>, launch scalable <strong>Meta and Google Ad funnels</strong>, shoot cinematic <strong>4K video reels</strong>, or develop a <strong>high-converting website</strong>, our data-backed campaigns turn clicks into loyal clients.
+              </p>
+              
+              <!-- Core Capabilities Pills -->
+              <div class="flex flex-wrap gap-2 pt-1 pb-2">
+                <span class="text-[11px] font-semibold bg-blush text-crimson px-3 py-1 rounded-full border border-blush-accent">Search Engine Optimization (SEO)</span>
+                <span class="text-[11px] font-semibold bg-blush text-crimson px-3 py-1 rounded-full border border-blush-accent">Meta & Google Ads (High ROAS)</span>
+                <span class="text-[11px] font-semibold bg-blush text-crimson px-3 py-1 rounded-full border border-blush-accent">4K Video Production & Editing</span>
+                <span class="text-[11px] font-semibold bg-blush text-crimson px-3 py-1 rounded-full border border-blush-accent">Conversion Rate Optimization (CRO)</span>
+                <span class="text-[11px] font-semibold bg-blush text-crimson px-3 py-1 rounded-full border border-blush-accent">Social Media Growth & Branding</span>
+              </div>
+
               <div>
                 <a href="#services" class="inline-flex items-center gap-2 text-crimson font-bold text-sm hover:translate-x-1 transition-transform">
-                  <span>Learn More</span>
-                  <span>→</span>
+                  <span>Explore Our Capabilities</span>
+                  <span>&rarr;</span>
                 </a>
               </div>
             </div>
@@ -769,6 +794,136 @@
               </button>
             </div>
 
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  
+  <!-- ==================== DIGITAL MARKETING IN ACTION (IMAGE SHOWCASE) ==================== -->
+  <section id="portfolio" class="py-24 bg-blush/40 border-b border-blush-soft">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3 reveal">
+        <div class="text-crimson font-bold text-xs uppercase tracking-[0.2em]">
+          CAMPAIGN EXCELLENCE
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-[40px] font-extrabold text-charcoal tracking-tight">
+          Digital Marketing in Action
+        </h2>
+        <p class="text-body text-base leading-relaxed">
+          Take a look at how we combine creative media production, analytical dashboards, and modern tech stacks to deliver measurable client results.
+        </p>
+      </div>
+
+      <!-- 4 Showcase Image Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+        
+        <!-- Showcase 1: SEO & Search Growth -->
+        <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-hover transition-all duration-300 flex flex-col justify-between border border-blush-accent">
+          <div class="relative aspect-[16/11] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80" 
+              alt="SEO Analytics & Organic Search Growth" 
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              loading="lazy"
+            />
+            <div class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-2.5 py-1 rounded-md text-[10px] font-bold text-crimson shadow-sm">
+              SEO & Ranking
+            </div>
+            <div class="absolute bottom-3 right-3 bg-emerald-500 text-white px-2 py-0.5 rounded text-[9px] font-extrabold shadow">
+              #1 Map Pack
+            </div>
+          </div>
+          <div class="p-5 space-y-2">
+            <h4 class="font-bold text-charcoal text-[15px] group-hover:text-crimson transition-colors">
+              Organic Search & Keyword Dominance
+            </h4>
+            <p class="text-xs text-body leading-relaxed">
+              Targeted local keywords and technical audits that drive steady, high-intent inbound inquiries.
+            </p>
+          </div>
+        </div>
+
+        <!-- Showcase 2: Paid Ads (Meta & Google) -->
+        <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-hover transition-all duration-300 flex flex-col justify-between border border-blush-accent">
+          <div class="relative aspect-[16/11] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80" 
+              alt="Paid Meta and Google Advertising Dashboard" 
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              loading="lazy"
+            />
+            <div class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-2.5 py-1 rounded-md text-[10px] font-bold text-crimson shadow-sm">
+              Paid Advertising
+            </div>
+            <div class="absolute bottom-3 right-3 bg-crimson text-white px-2 py-0.5 rounded text-[9px] font-extrabold shadow">
+              5.2x ROAS
+            </div>
+          </div>
+          <div class="p-5 space-y-2">
+            <h4 class="font-bold text-charcoal text-[15px] group-hover:text-crimson transition-colors">
+              Meta & Google Performance Max
+            </h4>
+            <p class="text-xs text-body leading-relaxed">
+              Precision pixel tracking, retargeting funnels, and dynamic ad creatives built for maximum ROI.
+            </p>
+          </div>
+        </div>
+
+        <!-- Showcase 3: Video Production & Commercial Shoot -->
+        <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-hover transition-all duration-300 flex flex-col justify-between border border-blush-accent">
+          <div class="relative aspect-[16/11] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=700&q=80" 
+              alt="Professional 4K Video Production & Brand Shoot" 
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              loading="lazy"
+            />
+            <div class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-2.5 py-1 rounded-md text-[10px] font-bold text-crimson shadow-sm">
+              Video & Reels
+            </div>
+            <div class="absolute bottom-3 right-3 bg-amber-500 text-white px-2 py-0.5 rounded text-[9px] font-extrabold shadow">
+              4K Cinematic
+            </div>
+          </div>
+          <div class="p-5 space-y-2">
+            <h4 class="font-bold text-charcoal text-[15px] group-hover:text-crimson transition-colors">
+              Cinematic Video & Short-Form Edits
+            </h4>
+            <p class="text-xs text-body leading-relaxed">
+              High-retention social reels, corporate films, and product showcases that build lasting brand authority.
+            </p>
+          </div>
+        </div>
+
+        <!-- Showcase 4: Web Development & CRO -->
+        <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-hover transition-all duration-300 flex flex-col justify-between border border-blush-accent">
+          <div class="relative aspect-[16/11] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=700&q=80" 
+              alt="High Converting Web Development & UX Design" 
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              loading="lazy"
+            />
+            <div class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-2.5 py-1 rounded-md text-[10px] font-bold text-crimson shadow-sm">
+              Web Architecture
+            </div>
+            <div class="absolute bottom-3 right-3 bg-blue-600 text-white px-2 py-0.5 rounded text-[9px] font-extrabold shadow">
+              99+ Speed
+            </div>
+          </div>
+          <div class="p-5 space-y-2">
+            <h4 class="font-bold text-charcoal text-[15px] group-hover:text-crimson transition-colors">
+              Conversion-Focused Websites
+            </h4>
+            <p class="text-xs text-body leading-relaxed">
+              Ultra-fast responsive landing pages and custom websites engineered to turn traffic into booked calls.
+            </p>
           </div>
         </div>
 
@@ -975,7 +1130,7 @@
             <svg class="w-5 h-5 text-white shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
             </svg>
-            <a href="mailto:kjmdrajith@gmail.com" class="hover:text-white transition-colors">kjmdrajith@gmail.com</a>
+            <a href="mailto:jkdigitalmarketing29@gmail.com" class="hover:text-white transition-colors">jkdigitalmarketing29@gmail.com</a>
           </div>
         </div>
 
