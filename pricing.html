@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Packages & Pricing | JK Digital Marketing</title>
+  <meta name="description" content="Transparent digital marketing packages, retainer tiers, and custom growth solutions. Starter, Growth Accelerator, and Enterprise 360 Retainers. Led by K Indraajith, Coimbatore.">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            crimson: {
+              DEFAULT: '#8B0F3A',
+              dark: '#6E0A2D',
+              deep: '#520721',
+              light: '#A51849',
+              hover: '#790B32'
+            },
+            blush: {
+              DEFAULT: '#FDF3F5',
+              soft: '#FCEDF0',
+              accent: '#F9DDE2'
+            },
+            charcoal: '#1A1A1A',
+            body: '#555555'
+          },
+          fontFamily: {
+            sans: ['"Poppins"', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+          boxShadow: {
+            'card': '0 12px 32px -4px rgba(26, 26, 26, 0.06), 0 4px 12px -2px rgba(26, 26, 26, 0.03)',
+            'hover': '0 20px 40px -8px rgba(139, 15, 58, 0.16), 0 8px 16px -4px rgba(26, 26, 26, 0.06)',
+            'crimson-btn': '0 8px 24px -4px rgba(139, 15, 58, 0.35)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #555555;
+      background-color: #FFFFFF;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      color: #1A1A1A;
+      font-weight: 700;
+    }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #FDF3F5; }
+    ::-webkit-scrollbar-thumb { background: #8B0F3A; border-radius: 9999px; }
+  </style>
+</head>
+<body class="antialiased text-body">
+
+  <!-- ==================== HEADER ==================== -->
+  <header id="mainHeader" class="sticky top-0 z-50 bg-white/95 backdrop-blur-md transition-all duration-300 border-b border-blush-accent">
+    <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-crimson flex items-center justify-center text-white shadow-md group-hover:bg-crimson-hover transition-colors relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-tr from-black/20 via-transparent to-white/20"></div>
+          <svg viewBox="0 0 36 36" class="w-7 h-7 fill-none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 10 V21 C12 24.5 9.8 26.5 7 26" />
+            <path d="M18 9 V27" />
+            <path d="M28 10 L19 19 L28 27" />
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-base sm:text-lg font-extrabold tracking-tight text-charcoal leading-tight flex items-center gap-1.5">
+            JK <span class="text-crimson">DIGITAL MARKETING</span>
+          </span>
+          <span class="text-[10px] font-semibold tracking-wider text-body uppercase">
+            Strategy • Brand • Growth
+          </span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7 text-[14px] font-medium text-charcoal">
+        <a href="index.html" class="py-1 hover:text-crimson transition-colors">Home</a>
+        <a href="services.html" class="py-1 hover:text-crimson transition-colors">Services</a>
+        <a href="about.html" class="py-1 hover:text-crimson transition-colors">About</a>
+        <a href="case-studies.html" class="py-1 hover:text-crimson transition-colors">Case Studies</a>
+        <a href="pricing.html" class="relative py-1 font-semibold text-crimson">
+          Packages
+          <span class="absolute bottom-0 left-0 w-full h-[2.5px] bg-crimson rounded-full"></span>
+        </a>
+        <a href="blog.html" class="py-1 hover:text-crimson transition-colors">Insights</a>
+        <a href="contact.html" class="py-1 hover:text-crimson transition-colors">Contact</a>
+      </nav>
+
+      <div class="hidden sm:flex items-center gap-3">
+        <button onclick="openQuoteModal()" class="px-6 py-2.5 rounded-full bg-crimson hover:bg-crimson-hover text-white text-xs sm:text-sm font-semibold tracking-wide shadow-crimson-btn hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 flex items-center gap-2">
+          <span>Get Free Proposal</span>
+          <span class="text-base leading-none">→</span>
+        </button>
+      </div>
+
+      <button id="mobileMenuBtn" aria-label="Toggle navigation menu" class="lg:hidden p-2 rounded-xl text-charcoal hover:bg-blush transition-colors">
+        <svg id="menuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2" stroke-linecap="round">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-blush-accent px-6 py-5 shadow-lg space-y-3">
+      <a href="index.html" class="block font-medium text-charcoal hover:text-crimson py-1">Home</a>
+      <a href="services.html" class="block font-medium text-charcoal hover:text-crimson py-1">Services</a>
+      <a href="about.html" class="block font-medium text-charcoal hover:text-crimson py-1">About Us</a>
+      <a href="case-studies.html" class="block font-medium text-charcoal hover:text-crimson py-1">Case Studies</a>
+      <a href="pricing.html" class="block font-semibold text-crimson py-1">Packages & Pricing</a>
+      <a href="blog.html" class="block font-medium text-charcoal hover:text-crimson py-1">Marketing Insights</a>
+      <a href="contact.html" class="block font-medium text-charcoal hover:text-crimson py-1">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="py-16 sm:py-20 bg-gradient-to-b from-blush via-white to-white text-center">
+    <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-crimson/20 shadow-sm">
+        <span class="text-xs font-bold text-crimson uppercase tracking-wider">Transparent Growth Retainers</span>
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-black text-charcoal tracking-tight max-w-3xl mx-auto leading-tight">
+        Predictable Investment. <br/><span class="text-crimson">Uncompromising ROI.</span>
+      </h1>
+      <p class="text-sm sm:text-base text-body max-w-2xl mx-auto leading-relaxed">
+        Choose a structured monthly growth package or build a tailored retainer. Every plan includes direct strategy guidance from Founder & CEO K Indraajith.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== 3 PRICING TIERS ==================== -->
+  <section class="py-12 bg-white">
+    <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- Tier 1: Starter Launchpad -->
+        <div class="p-8 rounded-3xl bg-white border border-slate-200/80 shadow-card hover:shadow-hover transition-all flex flex-col justify-between">
+          <div class="space-y-4">
+            <span class="text-xs font-extrabold uppercase tracking-wider text-slate-500">Local & Startup Brands</span>
+            <h3 class="text-2xl font-extrabold text-charcoal">Starter Launchpad</h3>
+            <p class="text-xs text-body leading-relaxed">
+              Designed for local businesses, solo clinics, and new startups seeking a strong organic presence and steady local inquiries.
+            </p>
+            <div class="pt-2 pb-4 border-b border-slate-100">
+              <span class="text-3xl font-black text-charcoal">₹22,000</span>
+              <span class="text-xs text-body">/month</span>
+            </div>
+            <ul class="text-xs text-body space-y-2.5">
+              <li class="flex items-center gap-2 font-medium text-charcoal">✓ 10 High-Retention Video Reels/mo</li>
+              <li class="flex items-center gap-2 font-medium text-charcoal">✓ Professional Dynamic Captions & Sound</li>
+              <li class="flex items-center gap-2 font-medium text-charcoal">✓ Instagram & Facebook Page Management</li>
+              <li class="flex items-center gap-2 font-medium text-charcoal">✓ Google Business Profile Local SEO Audit</li>
+              <li class="flex items-center gap-2">✓ Monthly Performance Report</li>
+              <li class="flex items-center gap-2 text-slate-400">✕ Paid Ad Management Not Included</li>
+              <li class="flex items-center gap-2 text-slate-400">✕ On-Location Video Shoot Not Included</li>
+            </ul>
+          </div>
+          <div class="pt-8">
+            <button onclick="openQuoteModal('Starter Launchpad')" class="w-full py-3 rounded-full bg-blush hover:bg-crimson text-crimson hover:text-white text-xs font-bold transition-all shadow-sm">
+              Select Starter Package →
+            </button>
+          </div>
+        </div>
+
+        <!-- Tier 2: Growth Accelerator (Featured) -->
+        <div class="p-8 sm:p-10 rounded-3xl bg-gradient-to-b from-blush via-white to-white border-2 border-crimson shadow-hover relative flex flex-col justify-between">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-crimson text-white text-[10px] font-extrabold tracking-wider uppercase shadow">
+            ★ Most Popular Growth Plan
+          </div>
+          <div class="space-y-4">
+            <span class="text-xs font-extrabold uppercase tracking-wider text-crimson">Scaling Businesses</span>
+            <h3 class="text-2xl font-extrabold text-charcoal">Growth Accelerator</h3>
+            <p class="text-xs text-body leading-relaxed">
+              Our flagship performance package for growing brands and clinics ready to scale customer acquisition with high-converting ads and video.
+            </p>
+            <div class="pt-2 pb-4 border-b border-blush-accent">
+              <span class="text-3xl font-black text-crimson">₹45,000</span>
+              <span class="text-xs text-body">/month</span>
+            </div>
+            <ul class="text-xs text-body space-y-2.5">
+              <li class="flex items-center gap-2 font-bold text-charcoal">✓ Meta Ads (FB & IG) OR Google Ads Management</li>
+              <li class="flex items-center gap-2 font-medium text-charcoal">✓ 1 Professional On-Site 4K Video Shoot / Quarter</li>
+              <li class="flex items-center gap-2 font-medium text-charcoal">✓ 18 Custom-Edited High-Retention Video Reels</li>
+              <li class="flex items-center gap-2 font-medium text-charcoal">✓ Direct-Response Ad Script Writing & Hooks</li>
+              <li class="flex items-center gap-2 font-medium text-charcoal">✓ Full Instagram & Facebook Page Handling</li>
+              <li class="flex items-center gap-2 font-medium text-charcoal">✓ Landing Page Conversion Rate Optimization (CRO)</li>
+              <li class="flex items-center gap-2 font-medium text-charcoal">✓ Weekly Metric Reviews & CPL Tracking</li>
+            </ul>
+          </div>
+          <div class="pt-8">
+            <button onclick="openQuoteModal('Growth Accelerator')" class="w-full py-3.5 rounded-full bg-crimson hover:bg-crimson-hover text-white text-xs font-bold tracking-wide shadow-crimson-btn transition-all">
+              Claim Growth Accelerator →
+            </button>
+          </div>
+        </div>
+
+        <!-- Tier 3: Enterprise Dominance Retainer -->
+        <div class="p-8 rounded-3xl bg-charcoal text-white border border-slate-700 shadow-card hover:shadow-hover transition-all flex flex-col justify-between">
+          <div class="space-y-4">
+            <span class="text-xs font-extrabold uppercase tracking-wider text-crimson-light">Market Leaders & D2C</span>
+            <h3 class="text-2xl font-extrabold text-white">360° Dominance Retainer</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Complete full-stack marketing department at your disposal. Covers all 11 disciplines with a dedicated video team, developer, and media buyer.
+            </p>
+            <div class="pt-2 pb-4 border-b border-slate-800">
+              <span class="text-3xl font-black text-white">₹85,000+</span>
+              <span class="text-xs text-slate-400">/month (Custom Scope)</span>
+            </div>
+            <ul class="text-xs text-slate-300 space-y-2.5">
+              <li class="flex items-center gap-2 font-bold text-white">★ All 11 Services Fully Unified</li>
+              <li class="flex items-center gap-2 font-medium text-white">✓ Monthly On-Site 4K Video Shoot in Coimbatore/TN</li>
+              <li class="flex items-center gap-2 font-medium text-white">✓ Omnichannel Meta Ads + Google Ads + YouTube Ads</li>
+              <li class="flex items-center gap-2 font-medium text-white">✓ Custom Web Development & Sales Funnel Rebuild</li>
+              <li class="flex items-center gap-2 font-medium text-white">✓ Complete Model Shoot & Catalog Production</li>
+              <li class="flex items-center gap-2 font-medium text-white">✓ Full SEO Domination (#1 Map Pack + Backlinks)</li>
+              <li class="flex items-center gap-2 font-medium text-white">✓ Direct Weekly Strategy with CEO K Indraajith</li>
+            </ul>
+          </div>
+          <div class="pt-8">
+            <button onclick="openQuoteModal('Complete Growth Retainer (All 11 Services)')" class="w-full py-3 rounded-full bg-white hover:bg-blush text-charcoal font-bold text-xs transition-all shadow">
+              Book Executive Consultation →
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ONE-TIME A LA CARTE ==================== -->
+  <section class="py-16 bg-blush">
+    <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <div class="text-center max-w-2xl mx-auto space-y-2">
+        <span class="text-xs font-extrabold uppercase tracking-widest text-crimson">SPECIALIZED ENGAGEMENTS</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-charcoal">
+          À La Carte & Project-Based Services
+        </h2>
+        <p class="text-xs sm:text-sm text-body">Need a single high-impact asset? We offer fixed-scope project delivery.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        
+        <div class="p-6 rounded-2xl bg-white shadow-card border border-blush-accent space-y-3">
+          <div class="text-xs font-bold text-crimson uppercase">Web Architecture</div>
+          <h4 class="font-bold text-base text-charcoal">High-Converting Website</h4>
+          <p class="text-xs text-body leading-relaxed">Custom responsive business website or sales landing page built for 95+ Core Web Vitals speed score.</p>
+          <div class="pt-2 text-xs font-black text-charcoal">Starting ₹25,000</div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white shadow-card border border-blush-accent space-y-3">
+          <div class="text-xs font-bold text-rose-600 uppercase">Studio Production</div>
+          <h4 class="font-bold text-base text-charcoal">Commercial 4K Video Shoot</h4>
+          <p class="text-xs text-body leading-relaxed">Full-day on-location or studio shoot with cinema cameras, lighting, audio, and raw footage handoff.</p>
+          <div class="pt-2 text-xs font-black text-charcoal">Starting ₹20,000 / Day</div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white shadow-card border border-blush-accent space-y-3">
+          <div class="text-xs font-bold text-purple-600 uppercase">Viral Content</div>
+          <h4 class="font-bold text-base text-charcoal">Batch 20 Reels Editing</h4>
+          <p class="text-xs text-body leading-relaxed">Send us your raw phone or camera clips. We add dynamic captions, cuts, transitions, sound effects, and color grading.</p>
+          <div class="pt-2 text-xs font-black text-charcoal">Starting ₹15,000 / Batch</div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white shadow-card border border-blush-accent space-y-3">
+          <div class="text-xs font-bold text-emerald-600 uppercase">Local Search</div>
+          <h4 class="font-bold text-base text-charcoal">Local SEO 90-Day Sprint</h4>
+          <p class="text-xs text-body leading-relaxed">Google Business Profile ranking overhaul, 40+ geotagged local citations, review capture, and schema setup.</p>
+          <div class="pt-2 text-xs font-black text-charcoal">Starting ₹18,000</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ==================== -->
+  <section class="py-16 bg-white">
+    <div class="max-w-[800px] mx-auto px-4 sm:px-6 space-y-6">
+      <div class="text-center space-y-2 mb-8">
+        <span class="text-xs font-extrabold uppercase tracking-widest text-crimson">COMMON QUESTIONS</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-charcoal">Pricing & Retainer FAQs</h2>
+      </div>
+
+      <div class="space-y-3 text-xs sm:text-sm">
+        <div class="p-4 rounded-xl bg-blush border border-blush-accent">
+          <div class="font-bold text-charcoal mb-1">Is ad spend included in the monthly retainer?</div>
+          <p class="text-body leading-relaxed">No. Ad spend is paid directly by your company to Meta (Facebook/Instagram) or Google via your own billing profile. This ensures you maintain 100% ownership of your ad accounts and historical data.</p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-blush border border-blush-accent">
+          <div class="font-bold text-charcoal mb-1">Are there long-term lock-in contracts?</div>
+          <p class="text-body leading-relaxed">We work on straightforward 3-month initial agreements to allow algorithms and A/B test variations to mature. After that, retainers convert to month-to-month with a 30-day notice.</p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-blush border border-blush-accent">
+          <div class="font-bold text-charcoal mb-1">Who manages my campaigns day-to-day?</div>
+          <p class="text-body leading-relaxed">Founder & CEO K Indraajith personally oversees strategic creative direction and media buying optimization, supported by our in-house Coimbatore videographers and developers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-charcoal text-white pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <div class="space-y-4">
+          <a href="index.html" class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-crimson flex items-center justify-center text-white font-extrabold text-sm shadow">JK</div>
+            <div class="flex flex-col">
+              <span class="text-base font-extrabold text-white">JK <span class="text-crimson-light">DIGITAL MARKETING</span></span>
+              <span class="text-[9px] uppercase tracking-wider text-slate-400">Strategy • Brand • Growth</span>
+            </div>
+          </a>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Full-stack digital growth agency led by K Indraajith (Founder & CEO). Delivering creative studio production, targeted ads, and website architecture.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <div class="text-xs font-bold text-white uppercase tracking-wider">Quick Links</div>
+          <ul class="text-xs text-slate-400 space-y-2">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home Overview</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors">All 11 Services</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Us & Leadership</a></li>
+            <li><a href="case-studies.html" class="hover:text-white transition-colors">Client Case Studies</a></li>
+            <li><a href="pricing.html" class="text-crimson-light font-semibold hover:text-white transition-colors">Growth Packages</a></li>
+            <li><a href="blog.html" class="hover:text-white transition-colors">Marketing Insights</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact & Location</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <div class="text-xs font-bold text-white uppercase tracking-wider">Core Capabilities</div>
+          <ul class="text-xs text-slate-400 space-y-1.5">
+            <li>• Professional Video Shoot</li>
+            <li>• Professional Video Editing</li>
+            <li>• Professional Script Writing</li>
+            <li>• Web Development</li>
+            <li>• SEO Marketing</li>
+            <li>• Meta & Google Ads</li>
+            <li>• Social Media Handling</li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <div class="text-xs font-bold text-white uppercase tracking-wider">Office & Contact</div>
+          <div class="text-xs text-slate-400 space-y-2">
+            <p><strong>HQ:</strong> Eachnari, Coimbatore – 641021, Tamil Nadu, India</p>
+            <p><strong>Phone:</strong> <a href="tel:+919865013509" class="hover:text-white transition-colors">+91 98650 13509</a></p>
+            <p><strong>Email:</strong> <a href="mailto:jkdigitalmarketing29@gmail.com" class="hover:text-white transition-colors">jkdigitalmarketing29@gmail.com</a></p>
+            <p><strong>CEO:</strong> K Indraajith (Founder & CEO)</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div>© 2025 JK Digital Marketing. All rights reserved.</div>
+        <div class="flex gap-4">
+          <a href="index.html" class="hover:text-slate-400">Home</a>
+          <a href="services.html" class="hover:text-slate-400">Services</a>
+          <a href="about.html" class="hover:text-slate-400">About</a>
+          <a href="contact.html" class="hover:text-slate-400">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== QUOTE MODAL ==================== -->
+  <div id="quoteModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-blush-accent max-h-[90vh] overflow-y-auto">
+      <button onclick="closeQuoteModal()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-blush hover:bg-blush-accent text-charcoal flex items-center justify-center font-bold">✕</button>
+      <div class="mb-5 space-y-1">
+        <span class="text-crimson font-bold text-xs uppercase tracking-widest">PACKAGE SELECTION</span>
+        <h3 class="text-2xl font-extrabold text-charcoal">Get Package Proposal</h3>
+        <p class="text-xs text-body">Founder & CEO K Indraajith will review your brand and configure your onboarding scope.</p>
+      </div>
+      <form onsubmit="handleQuoteSubmit(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-charcoal mb-1">Full Name *</label>
+          <input type="text" id="modalName" required placeholder="e.g. Priya Sharma" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-crimson text-sm outline-none">
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-charcoal mb-1">Email *</label>
+            <input type="email" required placeholder="you@company.com" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-crimson text-sm outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-charcoal mb-1">Phone Number *</label>
+            <input type="tel" required placeholder="+91 98765 43210" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-crimson text-sm outline-none">
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-charcoal mb-1">Select Desired Package</label>
+          <select id="pricingPackageSelect" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-crimson text-sm outline-none">
+            <option value="Starter Launchpad">Starter Launchpad (₹22,000/mo)</option>
+            <option value="Growth Accelerator" selected>Growth Accelerator (₹45,000/mo)</option>
+            <option value="Complete Growth Retainer (All 11 Services)">360° Dominance Retainer (₹85,000+/mo)</option>
+            <option value="Custom A La Carte">Custom / À La Carte Project</option>
+          </select>
+        </div>
+        <button type="submit" class="w-full py-3 rounded-full bg-crimson hover:bg-crimson-hover text-white text-xs sm:text-sm font-bold tracking-wide shadow-crimson-btn transition-all">
+          Confirm Package Inquiry →
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn?.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    const quoteModal = document.getElementById('quoteModal');
+    function openQuoteModal(pkgName) {
+      quoteModal.classList.remove('hidden');
+      if (pkgName) {
+        const select = document.getElementById('pricingPackageSelect');
+        for (let i = 0; i < select.options.length; i++) {
+          if (select.options[i].value.includes(pkgName)) {
+            select.selectedIndex = i;
+            break;
+          }
+        }
+      }
+    }
+    function closeQuoteModal() {
+      quoteModal.classList.add('hidden');
+    }
+    function handleQuoteSubmit(e) {
+      e.preventDefault();
+      alert('Thank you! Founder & CEO K Indraajith has received your request and will contact you within 2 business hours.');
+      closeQuoteModal();
+    }
+  </script>
+</body>
+</html>

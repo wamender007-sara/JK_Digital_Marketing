@@ -26,16 +26,10 @@ const server = http.createServer((req, res) => {
   }
 
   const safePath = path.normalize(reqPath).replace(/^(\.\.[\/\\])+/, '');
-  const filePath = path.join(PUBLIC_DIR, safePath);
+  let filePath = path.join(PUBLIC_DIR, safePath);
 
-  fs.stat(filePath, (err, stats) => {
-    if (err || !stats.isFile()) {
-      res.writeHead(404, { 'Content-Type': 'text/plain; charset=UTF-8' });
-      res.end('404 Not Found');
-      return;
-    }
-
-    const ext = path.extname(filePath).toLowerCase();
+  const serveFile = (targetPath) => {
+    const ext = path.extname(targetPath).toLowerCase();
     const contentType = MIME_TYPES[ext] || 'application/octet-stream';
 
     res.writeHead(200, {
@@ -43,8 +37,30 @@ const server = http.createServer((req, res) => {
       'Access-Control-Allow-Origin': '*'
     });
 
-    const stream = fs.createReadStream(filePath);
+    const stream = fs.createReadStream(targetPath);
     stream.pipe(res);
+  };
+
+  fs.stat(filePath, (err, stats) => {
+    if (!err && stats.isFile()) {
+      return serveFile(filePath);
+    }
+
+    // Try appending .html for clean URLs
+    if (!path.extname(filePath)) {
+      const htmlPath = filePath + '.html';
+      fs.stat(htmlPath, (htmlErr, htmlStats) => {
+        if (!htmlErr && htmlStats.isFile()) {
+          return serveFile(htmlPath);
+        }
+        res.writeHead(404, { 'Content-Type': 'text/plain; charset=UTF-8' });
+        res.end('404 Not Found');
+      });
+      return;
+    }
+
+    res.writeHead(404, { 'Content-Type': 'text/plain; charset=UTF-8' });
+    res.end('404 Not Found');
   });
 });
 

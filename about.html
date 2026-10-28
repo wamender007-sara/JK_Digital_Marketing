@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | JK Digital Marketing - Led by K Indraajith</title>
+  <meta name="description" content="Discover the story of JK Digital Marketing, founded by K Indraajith in Eachnari, Coimbatore. Unifying cinematic video production with performance digital advertising.">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            crimson: {
+              DEFAULT: '#8B0F3A',
+              dark: '#6E0A2D',
+              deep: '#520721',
+              light: '#A51849',
+              hover: '#790B32'
+            },
+            blush: {
+              DEFAULT: '#FDF3F5',
+              soft: '#FCEDF0',
+              accent: '#F9DDE2'
+            },
+            gold: {
+              DEFAULT: '#D4AF37',
+              light: '#F5D77F',
+              dark: '#AA820A'
+            },
+            charcoal: '#1A1A1A',
+            body: '#555555'
+          },
+          fontFamily: {
+            sans: ['"Poppins"', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+          boxShadow: {
+            'soft': '0 10px 30px -5px rgba(139, 15, 58, 0.07), 0 4px 12px -2px rgba(0, 0, 0, 0.04)',
+            'card': '0 12px 32px -4px rgba(26, 26, 26, 0.06), 0 4px 12px -2px rgba(26, 26, 26, 0.03)',
+            'hover': '0 20px 40px -8px rgba(139, 15, 58, 0.16), 0 8px 16px -4px rgba(26, 26, 26, 0.06)',
+            'crimson-btn': '0 8px 24px -4px rgba(139, 15, 58, 0.35)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #555555;
+      background-color: #FFFFFF;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      color: #1A1A1A;
+      font-weight: 700;
+    }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #FDF3F5; }
+    ::-webkit-scrollbar-thumb { background: #8B0F3A; border-radius: 9999px; }
+  </style>
+</head>
+<body class="antialiased text-body">
+
+  <!-- ==================== HEADER ==================== -->
+  <header id="mainHeader" class="sticky top-0 z-50 bg-white/95 backdrop-blur-md transition-all duration-300 border-b border-blush-accent">
+    <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-crimson flex items-center justify-center text-white shadow-md group-hover:bg-crimson-hover transition-colors relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-tr from-black/20 via-transparent to-white/20"></div>
+          <svg viewBox="0 0 36 36" class="w-7 h-7 fill-none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 10 V21 C12 24.5 9.8 26.5 7 26" />
+            <path d="M18 9 V27" />
+            <path d="M28 10 L19 19 L28 27" />
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-base sm:text-lg font-extrabold tracking-tight text-charcoal leading-tight flex items-center gap-1.5">
+            JK <span class="text-crimson">DIGITAL MARKETING</span>
+          </span>
+          <span class="text-[10px] font-semibold tracking-wider text-body uppercase">
+            Strategy • Brand • Growth
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center gap-7 text-[14px] font-medium text-charcoal">
+        <a href="index.html" class="py-1 hover:text-crimson transition-colors">Home</a>
+        <a href="services.html" class="py-1 hover:text-crimson transition-colors">Services</a>
+        <a href="about.html" class="relative py-1 font-semibold text-crimson">
+          About
+          <span class="absolute bottom-0 left-0 w-full h-[2.5px] bg-crimson rounded-full"></span>
+        </a>
+        <a href="case-studies.html" class="py-1 hover:text-crimson transition-colors">Case Studies</a>
+        <a href="pricing.html" class="py-1 hover:text-crimson transition-colors">Packages</a>
+        <a href="blog.html" class="py-1 hover:text-crimson transition-colors">Insights</a>
+        <a href="contact.html" class="py-1 hover:text-crimson transition-colors">Contact</a>
+      </nav>
+
+      <!-- CTA -->
+      <div class="hidden sm:flex items-center gap-3">
+        <button onclick="openQuoteModal()" class="px-6 py-2.5 rounded-full bg-crimson hover:bg-crimson-hover text-white text-xs sm:text-sm font-semibold tracking-wide shadow-crimson-btn hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 flex items-center gap-2">
+          <span>Get Free Proposal</span>
+          <span class="text-base leading-none">→</span>
+        </button>
+      </div>
+
+      <!-- Hamburger -->
+      <button id="mobileMenuBtn" aria-label="Toggle navigation menu" class="lg:hidden p-2 rounded-xl text-charcoal hover:bg-blush transition-colors">
+        <svg id="menuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2" stroke-linecap="round">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-blush-accent px-6 py-5 shadow-lg space-y-3">
+      <a href="index.html" class="block font-medium text-charcoal hover:text-crimson py-1">Home</a>
+      <a href="services.html" class="block font-medium text-charcoal hover:text-crimson py-1">Services</a>
+      <a href="about.html" class="block font-semibold text-crimson py-1">About Us</a>
+      <a href="case-studies.html" class="block font-medium text-charcoal hover:text-crimson py-1">Case Studies</a>
+      <a href="pricing.html" class="block font-medium text-charcoal hover:text-crimson py-1">Packages & Pricing</a>
+      <a href="blog.html" class="block font-medium text-charcoal hover:text-crimson py-1">Marketing Insights</a>
+      <a href="contact.html" class="block font-medium text-charcoal hover:text-crimson py-1">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="relative py-16 sm:py-24 bg-gradient-to-b from-blush via-white to-white">
+    <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center space-y-4">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-crimson/20 shadow-sm">
+          <span class="text-xs font-bold text-crimson uppercase tracking-wider">Our Origin & Vision</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-black text-charcoal tracking-tight leading-tight">
+          Crafting Growth in the Heart of <br/><span class="text-crimson">Eachnari, Coimbatore.</span>
+        </h1>
+        <p class="text-sm sm:text-base text-body leading-relaxed">
+          Founded and led by <strong>K Indraajith (Founder & CEO)</strong>, JK Digital Marketing was created to solve the single biggest flaw in the modern marketing industry: the disconnect between high-end creative video production and hard-hitting performance media buying.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== LEADERSHIP SPOTLIGHT ==================== -->
+  <section class="py-12 bg-white">
+    <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="p-8 sm:p-12 rounded-3xl bg-blush border border-blush-accent shadow-card grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Left: Digital Marketing Performance Screen -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative bg-white rounded-2xl p-3 shadow-hover border border-blush-accent overflow-hidden">
+            <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" 
+                alt="Digital Marketing Campaign Analytics - JK Digital Marketing" 
+                class="w-full h-full object-cover"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-black/20"></div>
+              
+              <!-- Floating Badge -->
+              <div class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-full shadow-md flex items-center gap-2">
+                <div class="w-5 h-5 rounded-full bg-crimson text-white flex items-center justify-center text-[8px] font-extrabold">JK</div>
+                <span class="text-[11px] font-bold text-charcoal">Strategy & Growth</span>
+              </div>
+
+              <!-- Founder Info Overlay -->
+              <div class="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-md rounded-xl p-3 shadow-lg border border-white">
+                <div class="text-[13px] font-extrabold text-charcoal">K Indraajith</div>
+                <div class="text-[11px] font-bold text-crimson">Founder & CEO</div>
+                <div class="text-[10px] text-body mt-0.5">Eachnari, Coimbatore – 641021</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: The Founder's Letter -->
+        <div class="lg:col-span-7 space-y-4">
+          <span class="text-xs font-extrabold uppercase tracking-widest text-crimson">FOUNDER'S PERSPECTIVE</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-charcoal leading-snug">
+            "We Treat Your Marketing Budget Like It's Our Own Capital."
+          </h2>
+          <div class="space-y-3 text-xs sm:text-sm text-body leading-relaxed">
+            <p>
+              When I founded JK Digital Marketing in Coimbatore, I noticed a frustrating pattern among local business owners, doctors, manufacturers, and retail brands. They would hire a video videographer who gave them pretty footage that never generated leads. Then they would hire a media buyer who ran ads using boring stock templates that nobody clicked.
+            </p>
+            <p>
+              <strong>JK Digital Marketing was built to bridge this divide completely.</strong> By unifying scriptwriting, on-location 4K video shoots, high-retention video editing, custom web funnels, and precision Meta & Google ad management under one roof, we eliminate handoffs, accelerate execution speed, and produce real, measurable return on investment.
+            </p>
+            <p>
+              Whether you are an established brand scaling to national distribution or a local Coimbatore enterprise seeking map pack dominance, our promise is simple: radical transparency, weekly ROI metrics, and relentless execution.
+            </p>
+          </div>
+          <div class="pt-2 flex items-center gap-6">
+            <div>
+              <div class="font-extrabold text-charcoal text-sm">K Indraajith</div>
+              <div class="text-xs text-crimson font-medium">Founder & CEO • JK Digital Marketing</div>
+            </div>
+            <div class="text-xs text-body border-l border-slate-300 pl-4">
+              <strong>HQ:</strong> Eachnari, Coimbatore - 641021
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4 CORE VALUES ==================== -->
+  <section class="py-16 bg-white">
+    <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <div class="text-center max-w-2xl mx-auto space-y-2">
+        <span class="text-xs font-extrabold uppercase tracking-widest text-crimson">THE JK PHILOSOPHY</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-charcoal">
+          Built on Four Non-Negotiable Principles
+        </h2>
+        <p class="text-xs sm:text-sm text-body">
+          We operate as an extension of your leadership team, driven by metrics that reflect in your bank account.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="p-6 rounded-2xl bg-blush/40 border border-blush-accent space-y-3 hover:shadow-card transition-all">
+          <div class="w-10 h-10 rounded-xl bg-crimson text-white flex items-center justify-center font-bold text-sm">01</div>
+          <h3 class="font-bold text-base text-charcoal">Data Over Opinions</h3>
+          <p class="text-xs text-body leading-relaxed">
+            We don't guess what creative works. We deploy structured A/B tests with multiple hooks, headlines, and audience segments, letting hard conversion data dictate budget scaling.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-blush/40 border border-blush-accent space-y-3 hover:shadow-card transition-all">
+          <div class="w-10 h-10 rounded-xl bg-crimson text-white flex items-center justify-center font-bold text-sm">02</div>
+          <h3 class="font-bold text-base text-charcoal">100% In-House Mastery</h3>
+          <p class="text-xs text-body leading-relaxed">
+            From our cinema camera rigs and editing suites to ad media buying, our core team handles your campaigns directly. No third-party outsourcing or unaccountable middlemen.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-blush/40 border border-blush-accent space-y-3 hover:shadow-card transition-all">
+          <div class="w-10 h-10 rounded-xl bg-crimson text-white flex items-center justify-center font-bold text-sm">03</div>
+          <h3 class="font-bold text-base text-charcoal">Radical Transparency</h3>
+          <p class="text-xs text-body leading-relaxed">
+            No vanity metrics. We report Cost Per Lead (CPL), Customer Acquisition Cost (CAC), and Return on Ad Spend (ROAS) directly via weekly dashboards and founder check-ins.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-blush/40 border border-blush-accent space-y-3 hover:shadow-card transition-all">
+          <div class="w-10 h-10 rounded-xl bg-crimson text-white flex items-center justify-center font-bold text-sm">04</div>
+          <h3 class="font-bold text-base text-charcoal">Rapid Speed of Execution</h3>
+          <p class="text-xs text-body leading-relaxed">
+            Traditional agencies take weeks to approve a simple graphic. We move at modern social media speed, producing, editing, and launching new winning ad angles in 48 hours.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PRODUCTION GEAR & TECH STACK ==================== -->
+  <section class="py-16 bg-blush">
+    <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <div class="text-center max-w-2xl mx-auto space-y-2">
+        <span class="text-xs font-extrabold uppercase tracking-widest text-crimson">COMMERCIAL INFRASTRUCTURE</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-charcoal">
+          Our Studio Gear & Digital Stack
+        </h2>
+        <p class="text-xs sm:text-sm text-body">
+          We invest in enterprise-grade production hardware and analytics software to guarantee top-tier execution.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bg-white p-6 rounded-2xl shadow-card border border-blush-accent space-y-3">
+          <div class="text-sm font-bold text-crimson uppercase tracking-wider">1. Camera & Audio Rig</div>
+          <h4 class="font-bold text-base text-charcoal">4K Cinema Hardware</h4>
+          <ul class="text-xs text-body space-y-2 leading-relaxed">
+            <li>• Sony FX-Series Cinema 4K Cameras</li>
+            <li>• Prime G-Master Portrait & Macro Lenses</li>
+            <li>• DJI RS3 Pro Gimbal 3-Axis Stabilizers</li>
+            <li>• Wireless Dual-Channel Lavalier Audio Mics</li>
+            <li>• Godox & Aputure High-CRI Softbox Lights</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-card border border-blush-accent space-y-3">
+          <div class="text-sm font-bold text-purple-700 uppercase tracking-wider">2. Post-Production Suite</div>
+          <h4 class="font-bold text-base text-charcoal">Editing & Color Grading</h4>
+          <ul class="text-xs text-body space-y-2 leading-relaxed">
+            <li>• Adobe Premiere Pro & After Effects CC</li>
+            <li>• DaVinci Resolve Studio Color Correction</li>
+            <li>• Custom Motion Graphics & 3D Typography</li>
+            <li>• Licensed Commercial Music & SFX Library</li>
+            <li>• Multi-Format High-Bitrate Vertical Exports</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-card border border-blush-accent space-y-3">
+          <div class="text-sm font-bold text-blue-700 uppercase tracking-wider">3. Performance Analytics</div>
+          <h4 class="font-bold text-base text-charcoal">Ad Platforms & Tracking</h4>
+          <ul class="text-xs text-body space-y-2 leading-relaxed">
+            <li>• Meta Ads Manager & Conversions API (CAPI)</li>
+            <li>• Google Ads (Search, Display, PMax, Video)</li>
+            <li>• Google Analytics 4 (GA4) & Tag Manager</li>
+            <li>• Semrush & Ahrefs SEO Competitive Intelligence</li>
+            <li>• Hotjar User Session Recording & Heatmaps</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== LOCATION & CONTACT BANNER ==================== -->
+  <section class="py-16 bg-white">
+    <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="p-8 sm:p-12 rounded-3xl bg-charcoal text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+        <div class="space-y-2 max-w-xl text-center md:text-left">
+          <span class="text-xs font-extrabold uppercase tracking-widest text-crimson-light">HEADQUARTERS</span>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-white">
+            Visit Our Office in Eachnari, Coimbatore
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-300">
+            Located at Eachnari, Coimbatore – 641021. We welcome business leaders for in-person strategy sessions or virtual consultations.
+          </p>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+          <button onclick="openQuoteModal()" class="px-6 py-3 rounded-full bg-crimson hover:bg-crimson-light text-white text-xs font-bold transition-all text-center">
+            Book Discovery Session →
+          </button>
+          <a href="contact.html" class="px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 text-white text-xs font-bold transition-all text-center">
+            View Office Details
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-charcoal text-white pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <div class="space-y-4">
+          <a href="index.html" class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-crimson flex items-center justify-center text-white font-extrabold text-sm shadow">JK</div>
+            <div class="flex flex-col">
+              <span class="text-base font-extrabold text-white">JK <span class="text-crimson-light">DIGITAL MARKETING</span></span>
+              <span class="text-[9px] uppercase tracking-wider text-slate-400">Strategy • Brand • Growth</span>
+            </div>
+          </a>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Full-stack digital growth agency led by K Indraajith (Founder & CEO). Delivering creative studio production, targeted ads, and website architecture.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <div class="text-xs font-bold text-white uppercase tracking-wider">Quick Links</div>
+          <ul class="text-xs text-slate-400 space-y-2">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home Overview</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors">All 11 Services</a></li>
+            <li><a href="about.html" class="text-crimson-light font-semibold hover:text-white transition-colors">About Us & Leadership</a></li>
+            <li><a href="case-studies.html" class="hover:text-white transition-colors">Client Case Studies</a></li>
+            <li><a href="pricing.html" class="hover:text-white transition-colors">Growth Packages</a></li>
+            <li><a href="blog.html" class="hover:text-white transition-colors">Marketing Insights</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact & Location</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <div class="text-xs font-bold text-white uppercase tracking-wider">Core Capabilities</div>
+          <ul class="text-xs text-slate-400 space-y-1.5">
+            <li>• Professional Video Shoot</li>
+            <li>• Professional Video Editing</li>
+            <li>• Professional Script Writing</li>
+            <li>• Web Development</li>
+            <li>• SEO Marketing</li>
+            <li>• Meta & Google Ads</li>
+            <li>• Social Media Handling</li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <div class="text-xs font-bold text-white uppercase tracking-wider">Office & Contact</div>
+          <div class="text-xs text-slate-400 space-y-2">
+            <p><strong>HQ:</strong> Eachnari, Coimbatore – 641021, Tamil Nadu, India</p>
+            <p><strong>Phone:</strong> <a href="tel:+919865013509" class="hover:text-white transition-colors">+91 98650 13509</a></p>
+            <p><strong>Email:</strong> <a href="mailto:jkdigitalmarketing29@gmail.com" class="hover:text-white transition-colors">jkdigitalmarketing29@gmail.com</a></p>
+            <p><strong>CEO:</strong> K Indraajith (Founder & CEO)</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div>© 2025 JK Digital Marketing. All rights reserved.</div>
+        <div class="flex gap-4">
+          <a href="index.html" class="hover:text-slate-400">Home</a>
+          <a href="services.html" class="hover:text-slate-400">Services</a>
+          <a href="about.html" class="hover:text-slate-400">About</a>
+          <a href="contact.html" class="hover:text-slate-400">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== QUOTE MODAL ==================== -->
+  <div id="quoteModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-blush-accent max-h-[90vh] overflow-y-auto">
+      <button onclick="closeQuoteModal()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-blush hover:bg-blush-accent text-charcoal flex items-center justify-center font-bold">✕</button>
+      <div class="mb-5 space-y-1">
+        <span class="text-crimson font-bold text-xs uppercase tracking-widest">DISCOVERY CALL</span>
+        <h3 class="text-2xl font-extrabold text-charcoal">Connect with K Indraajith</h3>
+        <p class="text-xs text-body">Receive an executive audit of your current ad spend, web conversions, and social reach.</p>
+      </div>
+      <form onsubmit="handleQuoteSubmit(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-charcoal mb-1">Your Full Name *</label>
+          <input type="text" required placeholder="e.g. Priya Sharma" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-crimson focus:ring-1 focus:ring-crimson text-sm outline-none">
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-charcoal mb-1">Email *</label>
+            <input type="email" required placeholder="you@company.com" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-crimson focus:ring-1 focus:ring-crimson text-sm outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-charcoal mb-1">Phone Number *</label>
+            <input type="tel" required placeholder="+91 98765 43210" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-crimson focus:ring-1 focus:ring-crimson text-sm outline-none">
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-charcoal mb-1">Company / Industry</label>
+          <input type="text" placeholder="e.g. Healthcare Clinic / Retail Brand" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-crimson focus:ring-1 focus:ring-crimson text-sm outline-none">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-charcoal mb-1">Current Marketing Goals</label>
+          <textarea rows="3" placeholder="What revenue or lead generation target are you looking to achieve this quarter?" class="w-full px-4 py-2 rounded-xl border border-slate-200 focus:border-crimson focus:ring-1 focus:ring-crimson text-sm outline-none resize-none"></textarea>
+        </div>
+        <button type="submit" class="w-full py-3 rounded-full bg-crimson hover:bg-crimson-hover text-white text-xs sm:text-sm font-bold tracking-wide shadow-crimson-btn transition-all">
+          Request Discovery Session →
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn?.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    const quoteModal = document.getElementById('quoteModal');
+    function openQuoteModal() {
+      quoteModal.classList.remove('hidden');
+    }
+    function closeQuoteModal() {
+      quoteModal.classList.add('hidden');
+    }
+    function handleQuoteSubmit(e) {
+      e.preventDefault();
+      alert('Thank you! Founder & CEO K Indraajith has received your request and will contact you within 2 business hours.');
+      closeQuoteModal();
+    }
+  </script>
+</body>
+</html>

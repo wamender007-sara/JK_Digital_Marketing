@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | JK Digital Marketing - Eachnari, Coimbatore</title>
+  <meta name="description" content="Contact JK Digital Marketing and Founder & CEO K Indraajith. Office in Eachnari, Coimbatore - 641021. Phone: +91 98650 13509. Email: jkdigitalmarketing29@gmail.com.">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            crimson: {
+              DEFAULT: '#8B0F3A',
+              dark: '#6E0A2D',
+              deep: '#520721',
+              light: '#A51849',
+              hover: '#790B32'
+            },
+            blush: {
+              DEFAULT: '#FDF3F5',
+              soft: '#FCEDF0',
+              accent: '#F9DDE2'
+            },
+            charcoal: '#1A1A1A',
+            body: '#555555'
+          },
+          fontFamily: {
+            sans: ['"Poppins"', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+          boxShadow: {
+            'card': '0 12px 32px -4px rgba(26, 26, 26, 0.06), 0 4px 12px -2px rgba(26, 26, 26, 0.03)',
+            'hover': '0 20px 40px -8px rgba(139, 15, 58, 0.16), 0 8px 16px -4px rgba(26, 26, 26, 0.06)',
+            'crimson-btn': '0 8px 24px -4px rgba(139, 15, 58, 0.35)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #555555;
+      background-color: #FFFFFF;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      color: #1A1A1A;
+      font-weight: 700;
+    }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #FDF3F5; }
+    ::-webkit-scrollbar-thumb { background: #8B0F3A; border-radius: 9999px; }
+  </style>
+</head>
+<body class="antialiased text-body">
+
+  <!-- ==================== HEADER ==================== -->
+  <header id="mainHeader" class="sticky top-0 z-50 bg-white/95 backdrop-blur-md transition-all duration-300 border-b border-blush-accent">
+    <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-crimson flex items-center justify-center text-white shadow-md group-hover:bg-crimson-hover transition-colors relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-tr from-black/20 via-transparent to-white/20"></div>
+          <svg viewBox="0 0 36 36" class="w-7 h-7 fill-none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 10 V21 C12 24.5 9.8 26.5 7 26" />
+            <path d="M18 9 V27" />
+            <path d="M28 10 L19 19 L28 27" />
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-base sm:text-lg font-extrabold tracking-tight text-charcoal leading-tight flex items-center gap-1.5">
+            JK <span class="text-crimson">DIGITAL MARKETING</span>
+          </span>
+          <span class="text-[10px] font-semibold tracking-wider text-body uppercase">
+            Strategy • Brand • Growth
+          </span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7 text-[14px] font-medium text-charcoal">
+        <a href="index.html" class="py-1 hover:text-crimson transition-colors">Home</a>
+        <a href="services.html" class="py-1 hover:text-crimson transition-colors">Services</a>
+        <a href="about.html" class="py-1 hover:text-crimson transition-colors">About</a>
+        <a href="case-studies.html" class="py-1 hover:text-crimson transition-colors">Case Studies</a>
+        <a href="pricing.html" class="py-1 hover:text-crimson transition-colors">Packages</a>
+        <a href="blog.html" class="py-1 hover:text-crimson transition-colors">Insights</a>
+        <a href="contact.html" class="relative py-1 font-semibold text-crimson">
+          Contact
+          <span class="absolute bottom-0 left-0 w-full h-[2.5px] bg-crimson rounded-full"></span>
+        </a>
+      </nav>
+
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="tel:+919865013509" class="px-5 py-2.5 rounded-full border border-crimson/30 text-crimson hover:bg-blush text-xs font-semibold transition-all flex items-center gap-2">
+          <span>📞 +91 98650 13509</span>
+        </a>
+      </div>
+
+      <button id="mobileMenuBtn" aria-label="Toggle navigation menu" class="lg:hidden p-2 rounded-xl text-charcoal hover:bg-blush transition-colors">
+        <svg id="menuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2" stroke-linecap="round">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-blush-accent px-6 py-5 shadow-lg space-y-3">
+      <a href="index.html" class="block font-medium text-charcoal hover:text-crimson py-1">Home</a>
+      <a href="services.html" class="block font-medium text-charcoal hover:text-crimson py-1">Services</a>
+      <a href="about.html" class="block font-medium text-charcoal hover:text-crimson py-1">About Us</a>
+      <a href="case-studies.html" class="block font-medium text-charcoal hover:text-crimson py-1">Case Studies</a>
+      <a href="pricing.html" class="block font-medium text-charcoal hover:text-crimson py-1">Packages & Pricing</a>
+      <a href="blog.html" class="block font-medium text-charcoal hover:text-crimson py-1">Marketing Insights</a>
+      <a href="contact.html" class="block font-semibold text-crimson py-1">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="py-16 sm:py-20 bg-gradient-to-b from-blush via-white to-white text-center">
+    <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-crimson/20 shadow-sm">
+        <span class="text-xs font-bold text-crimson uppercase tracking-wider">Direct Access to Leadership</span>
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-black text-charcoal tracking-tight max-w-3xl mx-auto leading-tight">
+        Let's Start Your Growth Engine. <br/><span class="text-crimson">Connect With K Indraajith.</span>
+      </h1>
+      <p class="text-sm sm:text-base text-body max-w-2xl mx-auto leading-relaxed">
+        Whether you need an on-location video shoot in Coimbatore, a full ad account audit, or an omnichannel retainer, our team replies within 2 business hours.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== MAIN CONTACT GRID ==================== -->
+  <section class="py-12 bg-white">
+    <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        
+        <!-- Left Column: Office Details & Direct Info -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <!-- Office Card -->
+          <div class="p-8 rounded-3xl bg-blush border border-blush-accent shadow-card space-y-6">
+            <div class="space-y-1">
+              <span class="text-xs font-extrabold uppercase tracking-widest text-crimson">HEADQUARTERS</span>
+              <h3 class="text-2xl font-black text-charcoal">Eachnari, Coimbatore</h3>
+              <p class="text-xs text-body">Registered Agency Office & Commercial Studio</p>
+            </div>
+
+            <div class="space-y-4 text-xs sm:text-sm">
+              <div class="flex items-start gap-3">
+                <div class="w-9 h-9 rounded-xl bg-white text-crimson flex items-center justify-center shrink-0 shadow-sm">📍</div>
+                <div>
+                  <div class="font-bold text-charcoal">Postal Address</div>
+                  <div class="text-body text-xs mt-0.5">Eachnari, Coimbatore – 641021, Tamil Nadu, India</div>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-9 h-9 rounded-xl bg-white text-crimson flex items-center justify-center shrink-0 shadow-sm">📞</div>
+                <div>
+                  <div class="font-bold text-charcoal">Direct Line</div>
+                  <a href="tel:+919865013509" class="text-crimson font-semibold hover:underline text-xs mt-0.5 block">+91 98650 13509</a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-9 h-9 rounded-xl bg-white text-crimson flex items-center justify-center shrink-0 shadow-sm">✉️</div>
+                <div>
+                  <div class="font-bold text-charcoal">Official Email</div>
+                  <a href="mailto:jkdigitalmarketing29@gmail.com" class="text-crimson font-semibold hover:underline text-xs mt-0.5 block">jkdigitalmarketing29@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-9 h-9 rounded-xl bg-white text-crimson flex items-center justify-center shrink-0 shadow-sm">👤</div>
+                <div>
+                  <div class="font-bold text-charcoal">Leadership Contact</div>
+                  <div class="text-body text-xs mt-0.5">K Indraajith (Founder & CEO)</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- WhatsApp Fast-Track -->
+            <div class="pt-4 border-t border-blush-accent">
+              <a href="https://wa.me/919865013509" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-2xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md transition-all">
+                <span>Direct WhatsApp Chat</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Working Hours Card -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200/80 shadow-card space-y-2 text-xs">
+            <div class="font-bold text-charcoal text-sm">Business Operations & Client Service</div>
+            <div class="text-body">Monday – Saturday: 9:30 AM – 7:30 PM IST</div>
+            <div class="text-body">Sunday: On-Location Emergency Video Shoots by Prior Booking</div>
+            <div class="text-emerald-600 font-bold pt-1">⚡ Average Response Time: Under 2 Business Hours</div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Full Inquiry Portal -->
+        <div class="lg:col-span-7">
+          <div class="p-8 sm:p-10 rounded-3xl bg-white border border-slate-200 shadow-hover space-y-6">
+            <div class="space-y-1">
+              <span class="text-xs font-extrabold uppercase tracking-widest text-crimson">INQUIRY FORM</span>
+              <h3 class="text-2xl font-black text-charcoal">Send Your Campaign Brief</h3>
+              <p class="text-xs text-body">Fill out the form below and we will prepare a preliminary strategy brief before our call.</p>
+            </div>
+
+            <form onsubmit="handleContactSubmit(event)" class="space-y-4 text-xs">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block font-bold text-charcoal mb-1">Your Full Name *</label>
+                  <input type="text" required placeholder="e.g. Priya Sharma" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-crimson focus:ring-1 focus:ring-crimson outline-none text-sm">
+                </div>
+                <div>
+                  <label class="block font-bold text-charcoal mb-1">Business Name / Company *</label>
+                  <input type="text" required placeholder="e.g. Acme Retail / Apex Clinic" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-crimson focus:ring-1 focus:ring-crimson outline-none text-sm">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block font-bold text-charcoal mb-1">Email Address *</label>
+                  <input type="email" required placeholder="you@company.com" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-crimson focus:ring-1 focus:ring-crimson outline-none text-sm">
+                </div>
+                <div>
+                  <label class="block font-bold text-charcoal mb-1">Phone / WhatsApp Number *</label>
+                  <input type="tel" required placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-crimson focus:ring-1 focus:ring-crimson outline-none text-sm">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block font-bold text-charcoal mb-1">Primary Service Needed *</label>
+                  <select class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-crimson focus:ring-1 focus:ring-crimson outline-none text-sm">
+                    <option value="Professional Video Shoot">1. Professional Video Shoot</option>
+                    <option value="Professional Video Editing">2. Professional Video Editing</option>
+                    <option value="Professional Script Writing">3. Professional Script Writing</option>
+                    <option value="Web Development">4. Web Development</option>
+                    <option value="SEO Marketing">5. SEO Marketing</option>
+                    <option value="Meta Ads">6. Meta Ads (Facebook & Instagram)</option>
+                    <option value="Google Ads">7. Google Ads (Search & YouTube)</option>
+                    <option value="Professional Model Shoot">8. Professional Model Shoot</option>
+                    <option value="Instagram Page Handling">9. Instagram Page Handling</option>
+                    <option value="YouTube Handling">10. YouTube Handling</option>
+                    <option value="Facebook Handling">11. Facebook Handling</option>
+                    <option value="Complete Growth Retainer (All 11 Services)" selected>Complete Growth Retainer (All 11 Services)</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block font-bold text-charcoal mb-1">Monthly Marketing Budget</label>
+                  <select class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-crimson focus:ring-1 focus:ring-crimson outline-none text-sm">
+                    <option value="₹20,000 - ₹40,000">₹20,000 - ₹40,000 / month</option>
+                    <option value="₹40,000 - ₹75,000" selected>₹40,000 - ₹75,000 / month</option>
+                    <option value="₹75,000 - ₹1,50,000">₹75,000 - ₹1,50,000 / month</option>
+                    <option value="₹1,50,000+">₹1,50,000+ / month (Enterprise)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block font-bold text-charcoal mb-1">Tell Us About Your Project & Targets</label>
+                <textarea rows="4" placeholder="What are your current customer acquisition bottlenecks? What target revenue or lead volume do you want to hit over the next 90 days?" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-crimson focus:ring-1 focus:ring-crimson outline-none text-sm resize-none"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-3.5 rounded-full bg-crimson hover:bg-crimson-hover text-white font-bold text-sm shadow-crimson-btn transition-all">
+                Submit Campaign Brief →
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-charcoal text-white pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <div class="space-y-4">
+          <a href="index.html" class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-crimson flex items-center justify-center text-white font-extrabold text-sm shadow">JK</div>
+            <div class="flex flex-col">
+              <span class="text-base font-extrabold text-white">JK <span class="text-crimson-light">DIGITAL MARKETING</span></span>
+              <span class="text-[9px] uppercase tracking-wider text-slate-400">Strategy • Brand • Growth</span>
+            </div>
+          </a>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Full-stack digital growth agency led by K Indraajith (Founder & CEO). Delivering creative studio production, targeted ads, and website architecture.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <div class="text-xs font-bold text-white uppercase tracking-wider">Quick Links</div>
+          <ul class="text-xs text-slate-400 space-y-2">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home Overview</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors">All 11 Services</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Us & Leadership</a></li>
+            <li><a href="case-studies.html" class="hover:text-white transition-colors">Client Case Studies</a></li>
+            <li><a href="pricing.html" class="hover:text-white transition-colors">Growth Packages</a></li>
+            <li><a href="blog.html" class="hover:text-white transition-colors">Marketing Insights</a></li>
+            <li><a href="contact.html" class="text-crimson-light font-semibold hover:text-white transition-colors">Contact & Location</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <div class="text-xs font-bold text-white uppercase tracking-wider">Core Capabilities</div>
+          <ul class="text-xs text-slate-400 space-y-1.5">
+            <li>• Professional Video Shoot</li>
+            <li>• Professional Video Editing</li>
+            <li>• Professional Script Writing</li>
+            <li>• Web Development</li>
+            <li>• SEO Marketing</li>
+            <li>• Meta & Google Ads</li>
+            <li>• Social Media Handling</li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <div class="text-xs font-bold text-white uppercase tracking-wider">Office & Contact</div>
+          <div class="text-xs text-slate-400 space-y-2">
+            <p><strong>HQ:</strong> Eachnari, Coimbatore – 641021, Tamil Nadu, India</p>
+            <p><strong>Phone:</strong> <a href="tel:+919865013509" class="hover:text-white transition-colors">+91 98650 13509</a></p>
+            <p><strong>Email:</strong> <a href="mailto:jkdigitalmarketing29@gmail.com" class="hover:text-white transition-colors">jkdigitalmarketing29@gmail.com</a></p>
+            <p><strong>CEO:</strong> K Indraajith (Founder & CEO)</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div>© 2025 JK Digital Marketing. All rights reserved.</div>
+        <div class="flex gap-4">
+          <a href="index.html" class="hover:text-slate-400">Home</a>
+          <a href="services.html" class="hover:text-slate-400">Services</a>
+          <a href="about.html" class="hover:text-slate-400">About</a>
+          <a href="contact.html" class="hover:text-slate-400">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn?.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      alert('Thank you! Founder & CEO K Indraajith has received your brief and will call or email you within 2 business hours.');
+    }
+  </script>
+</body>
+</html>
