@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Rounded Crimson Brand Background -->
+  <rect width="64" height="64" rx="16" fill="#8B0F3A"/>
+  
+  <!-- Elegant Gold Outline -->
+  <rect x="2.5" y="2.5" width="59" height="59" rx="13.5" fill="none" stroke="#D4AF37" stroke-width="2.5"/>
+  
+  <!-- Subtle Gradient Accent -->
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFBEB" />
+      <stop offset="50%" stop-color="#FDE68A" />
+      <stop offset="100%" stop-color="#D4AF37" />
+    </linearGradient>
+  </defs>
+
+  <!-- J Character (Bold White) -->
+  <path d="M20 18 V35 C20 41 16.5 44 12 43" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- K Character (Bold White & Gold) -->
+  <path d="M30 18 V46" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M49 18 L31 32 L49 46" stroke="url(#goldGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Small Star Sparkle Accent in Top Corner -->
+  <circle cx="51" cy="15" r="2.5" fill="#FDE68A"/>
+</svg>

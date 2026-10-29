@@ -1,18 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Rounded Crimson Brand Background -->
+  <rect width="64" height="64" rx="16" fill="#8B0F3A"/>
+  
+  <!-- Elegant Gold Outline -->
+  <rect x="2.5" y="2.5" width="59" height="59" rx="13.5" fill="none" stroke="#D4AF37" stroke-width="2.5"/>
+  
+  <!-- Subtle Gradient Accent -->
   <defs>
-    <linearGradient id="jk-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F59E0B" />
-      <stop offset="50%" stop-color="#FBBF24" />
-      <stop offset="100%" stop-color="#06B6D4" />
-    </linearGradient>
-    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.1"/>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFBEB" />
+      <stop offset="50%" stop-color="#FDE68A" />
+      <stop offset="100%" stop-color="#D4AF37" />
     </linearGradient>
   </defs>
-  <rect x="8" y="14" width="52" height="52" rx="14" fill="#131B2E" stroke="url(#jk-grad)" stroke-width="2"/>
-  <path d="M25 28 H33 V44 C33 48 30 51 25 51 C22 51 19 49.5 18 48" stroke="url(#jk-grad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M37 28 V52 M49 28 L38 40 L49 52" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="72" y="38" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" letter-spacing="1.5">JK <tspan fill="url(#jk-grad)">DIGITAL</tspan></text>
-  <text x="72" y="55" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" font-weight="600" fill="#94A3B8" letter-spacing="3.2">MARKETING AGENCY</text>
+
+  <!-- J Character (Bold White) -->
+  <path d="M20 18 V35 C20 41 16.5 44 12 43" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- K Character (Bold White & Gold) -->
+  <path d="M30 18 V46" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M49 18 L31 32 L49 46" stroke="url(#goldGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Small Star Sparkle Accent in Top Corner -->
+  <circle cx="51" cy="15" r="2.5" fill="#FDE68A"/>
 </svg>
