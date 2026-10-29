@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequently Asked Questions | JK Digital Marketing - Client Guide</title>
+  <meta name="description" content="Answers to common questions about working with JK Digital Marketing in Coimbatore: ad spend, video shoot logistics, contract terms, ownership, and expected ROI.">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            crimson: {
+              DEFAULT: '#8B0F3A',
+              dark: '#6E0A2D',
+              deep: '#520721',
+              light: '#A51849',
+              hover: '#790B32'
+            },
+            blush: {
+              DEFAULT: '#FDF3F5',
+              soft: '#FCEDF0',
+              accent: '#F9DDE2'
+            },
+            gold: {
+              DEFAULT: '#D4AF37',
+              light: '#F5D77F',
+              dark: '#AA820A'
+            },
+            charcoal: '#1A1A1A',
+            body: '#555555'
+          },
+          fontFamily: {
+            sans: ['"Poppins"', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+          boxShadow: {
+            'soft': '0 10px 30px -5px rgba(139, 15, 58, 0.07), 0 4px 12px -2px rgba(0, 0, 0, 0.04)',
+            'card': '0 12px 32px -4px rgba(26, 26, 26, 0.06), 0 4px 12px -2px rgba(26, 26, 26, 0.03)',
+            'hover': '0 20px 40px -8px rgba(139, 15, 58, 0.16), 0 8px 16px -4px rgba(26, 26, 26, 0.06)',
+            'crimson-btn': '0 8px 24px -4px rgba(139, 15, 58, 0.35)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #555555;
+      background-color: #FFFFFF;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      color: #1A1A1A;
+      font-weight: 700;
+    }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #FDF3F5; }
+    ::-webkit-scrollbar-thumb { background: #8B0F3A; border-radius: 9999px; }
+  </style>
+</head>
+<body class="antialiased text-body">
+
+  <!-- ==================== HEADER ==================== -->
+  <header id="mainHeader" class="sticky top-0 z-50 bg-white/95 backdrop-blur-md transition-all duration-300 border-b border-blush-accent">
+    <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-crimson flex items-center justify-center text-white shadow-md group-hover:bg-crimson-hover transition-colors relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-tr from-black/20 via-transparent to-white/20"></div>
+          <svg viewBox="0 0 36 36" class="w-7 h-7 fill-none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 10 V21 C12 24.5 9.8 26.5 7 26" />
+            <path d="M18 9 V27" />
+            <path d="M28 10 L19 19 L28 27" />
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-base sm:text-lg font-extrabold tracking-tight text-charcoal leading-tight flex items-center gap-1.5">
+            JK <span class="text-crimson">DIGITAL MARKETING</span>
+          </span>
+          <span class="text-[10px] font-semibold tracking-wider text-body uppercase">
+            Strategy • Brand • Growth
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center gap-6 text-[13.5px] font-medium text-charcoal">
+        <a href="index.html" class="py-1 hover:text-crimson transition-colors">Home</a>
+        <a href="services.html" class="py-1 hover:text-crimson transition-colors">Services</a>
+        <a href="industries.html" class="py-1 hover:text-crimson transition-colors">Industries</a>
+        <a href="process.html" class="py-1 hover:text-crimson transition-colors">Methodology</a>
+        <a href="case-studies.html" class="py-1 hover:text-crimson transition-colors">Results</a>
+        <a href="about.html" class="py-1 hover:text-crimson transition-colors">About</a>
+        <a href="pricing.html" class="py-1 hover:text-crimson transition-colors">Pricing</a>
+        <a href="faq.html" class="relative py-1 font-semibold text-crimson">
+          FAQ
+          <span class="absolute bottom-0 left-0 w-full h-[2.5px] bg-crimson rounded-full"></span>
+        </a>
+        <a href="contact.html" class="py-1 hover:text-crimson transition-colors">Contact</a>
+      </nav>
+
+      <!-- CTA -->
+      <div class="hidden sm:flex items-center gap-3">
+        <button onclick="openQuoteModal()" class="px-5 py-2 rounded-full bg-crimson hover:bg-crimson-hover text-white text-xs sm:text-sm font-semibold tracking-wide shadow-crimson-btn hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 flex items-center gap-2">
+          <span>Get Free Proposal</span>
+          <span class="text-base leading-none">→</span>
+        </button>
+      </div>
+
+      <!-- Hamburger -->
+      <button id="mobileMenuBtn" aria-label="Toggle navigation menu" class="lg:hidden p-2 rounded-xl text-charcoal hover:bg-blush transition-colors">
+        <svg id="menuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2" stroke-linecap="round">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-blush-accent px-6 py-5 shadow-lg space-y-2.5 text-sm">
+      <a href="index.html" class="block font-medium text-charcoal hover:text-crimson py-1">Home</a>
+      <a href="services.html" class="block font-medium text-charcoal hover:text-crimson py-1">Services (11 Core)</a>
+      <a href="industries.html" class="block font-medium text-charcoal hover:text-crimson py-1">Industries We Serve</a>
+      <a href="process.html" class="block font-medium text-charcoal hover:text-crimson py-1">Our Methodology</a>
+      <a href="case-studies.html" class="block font-medium text-charcoal hover:text-crimson py-1">Case Studies & ROI</a>
+      <a href="about.html" class="block font-medium text-charcoal hover:text-crimson py-1">About K Indraajith</a>
+      <a href="pricing.html" class="block font-medium text-charcoal hover:text-crimson py-1">Packages & Retainers</a>
+      <a href="faq.html" class="block font-semibold text-crimson py-1">FAQ & Client Guide</a>
+      <a href="blog.html" class="block font-medium text-charcoal hover:text-crimson py-1">Marketing Insights</a>
+      <a href="contact.html" class="block font-medium text-charcoal hover:text-crimson py-1">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="relative py-16 sm:py-24 bg-gradient-to-b from-blush via-white to-white overflow-hidden">
+    <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-crimson/20 shadow-sm mb-6">
+        <span class="w-2 h-2 rounded-full bg-crimson animate-ping"></span>
+        <span class="text-xs font-bold text-crimson uppercase tracking-wider">Complete Client Transparency</span>
+      </div>
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-charcoal tracking-tight max-w-4xl mx-auto leading-tight mb-6">
+        Frequently Asked Questions <br/>
+        <span class="text-crimson">& Strategic Client Guide.</span>
+      </h1>
+      <p class="text-base sm:text-lg text-body max-w-2xl mx-auto leading-relaxed mb-8">
+        Everything you need to know about partnering with JK Digital Marketing: contracts, ad spend billing, creative asset ownership, timelines, and guarantees.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ACCORDION LIST ==================== -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+
+      <!-- FAQ 01 -->
+      <div class="p-6 rounded-2xl border border-slate-200/80 bg-white shadow-card hover:shadow-hover transition-all">
+        <h3 class="text-base sm:text-lg font-bold text-charcoal mb-2 flex items-center justify-between gap-4">
+          <span>01. Who pays the ad spend on Meta and Google, and how is it billed?</span>
+          <span class="text-crimson text-xl font-bold">+</span>
+        </h3>
+        <p class="text-xs sm:text-sm text-body leading-relaxed pt-2 border-t border-slate-100">
+          You pay Meta and Google directly. Your ad accounts are linked to your company credit card or debit card. JK Digital Marketing charges a transparent, flat monthly management and production retainer. We <strong>never</strong> take hidden markups or percentages on your ad spend, ensuring our advice remains 100% unbiased.
+        </p>
+      </div>
+
+      <!-- FAQ 02 -->
+      <div class="p-6 rounded-2xl border border-slate-200/80 bg-white shadow-card hover:shadow-hover transition-all">
+        <h3 class="text-base sm:text-lg font-bold text-charcoal mb-2 flex items-center justify-between gap-4">
+          <span>02. Who owns the ad accounts, video assets, and web source code?</span>
+          <span class="text-crimson text-xl font-bold">+</span>
+        </h3>
+        <p class="text-xs sm:text-sm text-body leading-relaxed pt-2 border-t border-slate-100">
+          <strong>You own 100% of everything.</strong> All campaigns run inside your ad manager, all website code is handed over to your hosting, and all raw footage and edited 4K video exports belong entirely to you. If you ever pause or transition services, you retain all data, tracking pixels, and creative assets with zero vendor lock-in.
+        </p>
+      </div>
+
+      <!-- FAQ 03 -->
+      <div class="p-6 rounded-2xl border border-slate-200/80 bg-white shadow-card hover:shadow-hover transition-all">
+        <h3 class="text-base sm:text-lg font-bold text-charcoal mb-2 flex items-center justify-between gap-4">
+          <span>03. How fast can we expect verified leads or purchase orders?</span>
+          <span class="text-crimson text-xl font-bold">+</span>
+        </h3>
+        <p class="text-xs sm:text-sm text-body leading-relaxed pt-2 border-t border-slate-100">
+          For paid advertising (Meta Ads & Google Search Ads), campaigns typically begin generating validated customer inquiries within <strong>48 to 72 hours</strong> of launch. For organic SEO, Google Map Pack dominance, and brand positioning, measurable growth compounds over 60 to 90 days as domain trust solidifies.
+        </p>
+      </div>
+
+      <!-- FAQ 04 -->
+      <div class="p-6 rounded-2xl border border-slate-200/80 bg-white shadow-card hover:shadow-hover transition-all">
+        <h3 class="text-base sm:text-lg font-bold text-charcoal mb-2 flex items-center justify-between gap-4">
+          <span>04. Do you create ad creatives in both Tamil and English?</span>
+          <span class="text-crimson text-xl font-bold">+</span>
+        </h3>
+        <p class="text-xs sm:text-sm text-body leading-relaxed pt-2 border-t border-slate-100">
+          Yes! Being native to Eachanari, Coimbatore, our copywriters, voiceover artists, and directors produce content in native <strong>Tamil, English, and bilingual "Tanglish"</strong>. We also produce national campaigns in Hindi when scaling D2C brands across Northern and Western India.
+        </p>
+      </div>
+
+      <!-- FAQ 05 -->
+      <div class="p-6 rounded-2xl border border-slate-200/80 bg-white shadow-card hover:shadow-hover transition-all">
+        <h3 class="text-base sm:text-lg font-bold text-charcoal mb-2 flex items-center justify-between gap-4">
+          <span>05. Can we hire you for 4K video shoot and editing alone without ad management?</span>
+          <span class="text-crimson text-xl font-bold">+</span>
+        </h3>
+        <p class="text-xs sm:text-sm text-body leading-relaxed pt-2 border-t border-slate-100">
+          Absolutely. While our 360° Retainer provides the highest ROI by connecting production directly to media buying, you can book our production crew for standalone corporate films, product lookbooks, model shoots, or reel batches as one-off projects.
+        </p>
+      </div>
+
+      <!-- FAQ 06 -->
+      <div class="p-6 rounded-2xl border border-slate-200/80 bg-white shadow-card hover:shadow-hover transition-all">
+        <h3 class="text-base sm:text-lg font-bold text-charcoal mb-2 flex items-center justify-between gap-4">
+          <span>06. How does video production logistics work for businesses outside Coimbatore?</span>
+          <span class="text-crimson text-xl font-bold">+</span>
+        </h3>
+        <p class="text-xs sm:text-sm text-body leading-relaxed pt-2 border-t border-slate-100">
+          Our cinema production team regularly travels across Tirupur, Erode, Salem, Chennai, Bangalore, and Kerala. We bring all 4K cinema gear, wireless microphones, lighting equipment, and gimbal rigs right to your factory, showroom, hospital, or property site for seamless 1-day or 2-day shoot schedules.
+        </p>
+      </div>
+
+      <!-- FAQ 07 -->
+      <div class="p-6 rounded-2xl border border-slate-200/80 bg-white shadow-card hover:shadow-hover transition-all">
+        <h3 class="text-base sm:text-lg font-bold text-charcoal mb-2 flex items-center justify-between gap-4">
+          <span>07. How are incoming leads routed to our sales team?</span>
+          <span class="text-crimson text-xl font-bold">+</span>
+        </h3>
+        <p class="text-xs sm:text-sm text-body leading-relaxed pt-2 border-t border-slate-100">
+          Speed to lead is critical. The moment a customer submits their information on your Meta ad or web landing page, our webhook automations push their name, verified phone number, city, and exact inquiry to your sales team’s <strong>WhatsApp group</strong> and Google Sheet in under <strong>30 seconds</strong>.
+        </p>
+      </div>
+
+      <!-- FAQ 08 -->
+      <div class="p-6 rounded-2xl border border-slate-200/80 bg-white shadow-card hover:shadow-hover transition-all">
+        <h3 class="text-base sm:text-lg font-bold text-charcoal mb-2 flex items-center justify-between gap-4">
+          <span>08. What are the contract terms and cancellation policies?</span>
+          <span class="text-crimson text-xl font-bold">+</span>
+        </h3>
+        <p class="text-xs sm:text-sm text-body leading-relaxed pt-2 border-t border-slate-100">
+          We believe client retention should be earned through performance, not restrictive legal handcuffs. Our standard retainer agreements operate on 3-month growth sprints with a straightforward 30-day notice period.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== STILL HAVE QUESTIONS? ==================== -->
+  <section class="py-16 bg-blush">
+    <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-charcoal">Have a Question Not Answered Here?</h2>
+      <p class="text-xs sm:text-sm text-body max-w-xl mx-auto">
+        Speak directly with <strong>K Indraajith (Founder & CEO)</strong>. We will review your current marketing bottlenecks and give you an honest appraisal of what will move the needle.
+      </p>
+      <div class="pt-2">
+        <a href="contact.html" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-crimson hover:bg-crimson-hover text-white text-xs sm:text-sm font-bold shadow-crimson-btn transition-all">
+          <span>Book Free Strategic Consultation</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-charcoal text-white pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-12 border-b border-slate-800 text-xs">
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg bg-crimson flex items-center justify-center font-bold text-white text-sm">JK</div>
+            <span class="font-black text-sm text-white tracking-wide">JK DIGITAL MARKETING</span>
+          </div>
+          <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
+            Headquartered in Eachanari, Coimbatore, Tamil Nadu. Founded by K Indraajith to deliver unified 4K creative production and algorithmic media buying across India.
+          </p>
+          <div class="text-slate-400 space-y-1">
+            <div>📍 Eachanari, Coimbatore, Tamil Nadu – 641021</div>
+            <div>📞 <a href="tel:+919876543210" class="hover:text-white transition-colors">+91 98765 43210</a></div>
+            <div>✉️ <a href="mailto:contact@jkdigitalmarketing.in" class="hover:text-white transition-colors">contact@jkdigitalmarketing.in</a></div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white text-sm mb-3">Company Suite</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home Portal</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Our Agency</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors">11 Core Disciplines</a></li>
+            <li><a href="industries.html" class="hover:text-white transition-colors">Industries We Serve</a></li>
+            <li><a href="process.html" class="hover:text-white transition-colors">Growth Methodology</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white text-sm mb-3">Client Resources</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="case-studies.html" class="hover:text-white transition-colors">Verified Case Studies</a></li>
+            <li><a href="pricing.html" class="hover:text-white transition-colors">Packages & Retainers</a></li>
+            <li><a href="faq.html" class="text-crimson font-bold">Client FAQ Guide</a></li>
+            <li><a href="blog.html" class="hover:text-white transition-colors">Marketing Insights</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact Founder</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white text-sm mb-3">Client Guarantee</h4>
+          <p class="text-slate-400 leading-relaxed">
+            100% Asset & Ad Account Ownership. No vendor lock-in. Transparent live dashboards updated daily.
+          </p>
+        </div>
+      </div>
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-slate-500 text-[11px] gap-2">
+        <p>© 2026 JK Digital Marketing. Founded by K Indraajith. All rights reserved.</p>
+        <p>Eachanari, Coimbatore, Tamil Nadu, India.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Script -->
+  <script>
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+
+    function openQuoteModal(serviceName = '') {
+      window.location.href = 'contact.html' + (serviceName ? '?service=' + encodeURIComponent(serviceName) : '');
+    }
+  </script>
+</body>
+</html>
