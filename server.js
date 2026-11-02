@@ -19,8 +19,30 @@ const MIME_TYPES = {
   '.vcf': 'text/vcard; charset=UTF-8'
 };
 
+const SOCIAL_REDIRECTS = {
+  '/youtube': 'https://www.youtube.com/@K.Indraajith',
+  '/yt': 'https://www.youtube.com/@K.Indraajith',
+  '/instagram': 'https://www.instagram.com/jkdigitalmarketing2026?srtk=MTNjOXVuMzhlZHd2Mw==',
+  '/ig': 'https://www.instagram.com/jkdigitalmarketing2026?srtk=MTNjOXVuMzhlZHd2Mw==',
+  '/facebook': 'https://www.facebook.com/share/1EYAAaybbL/',
+  '/fb': 'https://www.facebook.com/share/1EYAAaybbL/',
+  '/whatsapp': 'https://wa.me/919865013509',
+  '/wa': 'https://wa.me/919865013509'
+};
+
 const server = http.createServer((req, res) => {
   let reqPath = decodeURI(req.url.split('?')[0]);
+  const lowerPath = reqPath.toLowerCase().replace(/\/$/, '');
+
+  // Handle social media redirects
+  if (SOCIAL_REDIRECTS[lowerPath]) {
+    res.writeHead(302, {
+      'Location': SOCIAL_REDIRECTS[lowerPath],
+      'Access-Control-Allow-Origin': '*'
+    });
+    return res.end();
+  }
+
   if (reqPath === '/' || reqPath === '') {
     reqPath = '/index.html';
   }
