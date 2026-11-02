@@ -1,4 +1,4 @@
-const http = require('http');
+﻿const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
@@ -26,8 +26,8 @@ const SOCIAL_REDIRECTS = {
   '/ig': 'https://www.instagram.com/jkdigitalmarketing2026?srtk=MTNjOXVuMzhlZHd2Mw==',
   '/facebook': 'https://www.facebook.com/share/1EYAAaybbL/',
   '/fb': 'https://www.facebook.com/share/1EYAAaybbL/',
-  '/whatsapp': 'https://wa.me/919865013509',
-  '/wa': 'https://wa.me/919865013509'
+  '/whatsapp': 'https://wa.me/919865043509',
+  '/wa': 'https://wa.me/919865043509'
 };
 
 const server = http.createServer((req, res) => {
